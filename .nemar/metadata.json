@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Liu, Lv et al. 2023 — EEG datasets of stroke patients (motor imagery)",
+  "description": "This dataset comprises electroencephalography (EEG) recordings from 50 acute stroke patients (1-30 days post-stroke) performing motor imagery tasks of left- and right-handed hand-grip movements. Recorded using a wireless 29-channel EEG system at 500 Hz, the dataset includes raw and preprocessed data, motor imagery instructions, and clinical assessments. This is the first open dataset to systematically address bilateral motor imagery in acute stroke patients, providing a critical resource for brain-computer interface algorithm development and clinical rehabilitation applications.",
+  "methods_description": "EEG data were collected from 50 acute stroke patients using a ZhenTec NT1 wireless multichannel system with 29 EEG channels and 2 EOG channels at 500 Hz sampling rate. Participants performed 40 trials of hand-grip motor imagery (20 left-hand, 20 right-hand), with each 8-second trial consisting of an instruction phase, 4-second video-guided imagery phase, and rest period. Data were preprocessed using EEGLAB (MATLAB R2019b) with FIR filtering (0.5-40 Hz bandpass), baseline removal, and artifact rejection. Clinical assessments included NIHSS, MBI, and mRS scores.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Haijie Liu": {},
     "Penghu Wei": {},
@@ -15,6 +20,31 @@
     "Bo Han": {},
     "Junwei Hao": {}
   },
+  "keywords": [
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "stroke rehabilitation"
+    },
+    {
+      "term": "acute stroke"
+    },
+    {
+      "term": "hand-grip imagery"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41597-023-02787-8",
@@ -47,14 +77,11 @@
       "award_number": "81825008"
     }
   ],
-  "title": "Liu et al. 2023 — Motor Imagery EEG dataset",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "705.5 MB (53 files)"
   ],
@@ -67,38 +94,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from 50 acute stroke patients (1-30 days post-stroke) performing motor imagery tasks of left- and right-handed hand-grip movements. Recorded using a wireless 29-channel EEG system (29 EEG + 2 EOG channels) at 500 Hz, the dataset includes raw and preprocessed data, representing the first open resource addressing bilateral motor imagery in acute stroke populations. The data supports brain-computer interface development and rehabilitation applications in clinical stroke recovery.",
-  "methods_description": "EEG data were acquired from 50 acute stroke patients using a ZhenTec NT1 wireless multichannel system with 29 EEG channels and 2 EOG channels sampled at 500 Hz. Participants performed 40 trials of hand-grip motor imagery (20 left, 20 right) with each 8-second trial consisting of instruction, 4-second video-guided imagery, and rest phases. Data were preprocessed using EEGLAB (MATLAB R2019b) with FIR filtering (0.5-40 Hz bandpass), baseline removal, and artifact rejection. Clinical assessments included NIHSS, MBI, and mRS scores.",
-  "keywords": [
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "stroke rehabilitation"
-    },
-    {
-      "term": "acute stroke"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "hand-grip imagery"
-    },
-    {
-      "term": "databases"
-    },
-    {
-      "term": "scientific data"
-    }
-  ],
-  "source_hash": "da1e5ae84f4cdae8b36975864919a274773c61b338d0e671067787e6fe4a6a1c"
+  "source_hash": "d2b9f03a4f78b7676a401da34bb0cb58c65a55c4736017104aaa0339e4349815"
 }
