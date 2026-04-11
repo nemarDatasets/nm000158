@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Liu, Lv et al. 2023 — EEG datasets of stroke patients (motor imagery)",
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 50 acute stroke patients (1-30 days post-stroke) performing motor imagery tasks of left- and right-handed hand-grip movements. Recorded using a wireless 29-channel EEG system at 500 Hz, the dataset includes raw and preprocessed data, motor imagery instructions, and clinical assessments. This is the first open dataset to systematically address bilateral motor imagery in acute stroke patients, providing a critical resource for brain-computer interface algorithm development and clinical rehabilitation applications.",
-  "methods_description": "EEG data were collected from 50 acute stroke patients using a ZhenTec NT1 wireless multichannel system with 29 EEG channels and 2 EOG channels at 500 Hz sampling rate. Participants performed 40 trials of hand-grip motor imagery (20 left-hand, 20 right-hand), with each 8-second trial consisting of an instruction phase, 4-second video-guided imagery phase, and rest period. Data were preprocessed using EEGLAB (MATLAB R2019b) with FIR filtering (0.5-40 Hz bandpass), baseline removal, and artifact rejection. Clinical assessments included NIHSS, MBI, and mRS scores.",
+  "description": "An EEG motor imagery dataset from 50 acute stroke patients (1-30 days post-stroke) performing left- and right-handed hand-grip imagination tasks. The dataset comprises 40 trials per subject (20 left, 20 right) recorded with a 29-channel wireless EEG system at 500 Hz, including raw and preprocessed data. This is the first open dataset to address bilateral motor imagery in acute stroke patients, providing a critical resource for brain-computer interface algorithm development and clinical rehabilitation applications.",
+  "methods_description": "EEG data were collected from 50 acute stroke patients using a ZhenTec NT1 wireless multichannel system with 29 EEG channels and 2 EOG channels at 500 Hz sampling rate. Participants performed 40 motor imagery trials (20 left-hand, 20 right-hand grip imagination) guided by video and audio cues. Each 8-second trial consisted of an instruction phase, 4-second video-guided imagery phase, and rest period. Data were preprocessed using EEGLAB (MATLAB R2019b) with FIR filtering (0.5-40 Hz bandpass) and baseline removal. Electrode montage followed the 10-10 system with semi-dry Ag/AgCl electrodes referenced to CPz.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -40,9 +40,7 @@
       "term": "hand-grip imagery"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "BCI"
     }
   ],
   "related_identifiers": [
@@ -94,5 +92,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "d2b9f03a4f78b7676a401da34bb0cb58c65a55c4736017104aaa0339e4349815"
+  "source_hash": "e565b840cf18e0eaa5bf1b170d41e264be9b9978fe0c541b8f9cd175c8d73912"
 }
