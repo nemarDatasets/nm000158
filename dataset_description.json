@@ -1,5 +1,5 @@
 {
-  "Name": "Liu et al. 2023 — Motor Imagery EEG dataset",
+  "Name": "Liu, Lv et al. 2023 — EEG datasets of stroke patients (motor imagery)",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.4.0",
   "DatasetType": "derivative",
