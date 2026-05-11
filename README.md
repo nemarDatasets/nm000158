@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000158-blue)](https://doi.org/10.82901/nemar.nm000158)
+
 # Dataset [1]_ from the study on motor imagery [2]_
 
 Dataset [1]_ from the study on motor imagery [2]_.
