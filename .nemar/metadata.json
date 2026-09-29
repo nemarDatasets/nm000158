@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Liu, Lv et al. 2023 — EEG datasets of stroke patients (motor imagery)",
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 50 acute stroke patients (1-30 days post-stroke) performing motor imagery tasks of left- and right-handed hand-grip movements. Each subject completed 40 trials (20 per hand) of cue-based motor imagery guided by video stimuli, recorded using a 29-channel wireless EEG system at 500 Hz. The dataset includes raw and preprocessed data, representing the first open resource addressing bilateral motor imagery in the acute stroke population and supporting brain-computer interface development for neurorehabilitation applications.",
-  "methods_description": "EEG data were collected from 50 acute stroke patients using a ZhenTec NT1 wireless multichannel system with 29 EEG channels and 2 EOG channels at 500 Hz sampling rate. Participants performed 40 motor imagery trials (20 left-hand, 20 right-hand) in a cue-based paradigm, with each 8-second trial consisting of an instruction phase, 4-second video-guided imagery phase, and rest period. Data were recorded with semi-dry Ag/AgCl electrodes in a 10-10 montage (reference: CPz, ground: FPz). Preprocessing included FIR filtering (0.5-40 Hz bandpass) and baseline removal using EEGLAB in MATLAB R2019b.",
+  "description": "EEG motor imagery dataset recorded from 50 acute stroke patients (1-30 days post-stroke) using a wireless portable semi-dry saline EEG system. Patients imagined left- or right-hand grasping during video-guided trials (40 per subject). It is presented as the first open dataset addressing left- and right-handed motor imagery in acute stroke, supporting BCI algorithm development and rehabilitation applications. Raw and preprocessed data and patient clinical characteristics are provided.",
+  "methods_description": "EEG was recorded at 500 Hz with a ZhenTec NT1 wireless system (29 EEG and 2 EOG channels, semi-dry Ag/AgCl electrodes, CPz reference). Each of 40 trials per subject (20 left, 20 right) lasted 8 s, with an audio instruction, 4 s video-guided hand-grip motor imagery, and a rest period. Preprocessing in EEGLAB included baseline removal and 0.5-40 Hz FIR filtering.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,26 +22,29 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
       "term": "motor imagery"
     },
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "EEG"
-    },
-    {
-      "term": "stroke rehabilitation"
-    },
-    {
-      "term": "acute stroke"
-    },
-    {
-      "term": "Electroencephalography",
+      "term": "Stroke",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020521"
+    },
+    {
+      "term": "Rehabilitation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012046"
+    },
+    {
+      "term": "hand-grip imagery"
     }
   ],
   "related_identifiers": [
@@ -53,7 +56,7 @@
     {
       "identifier": "10.6084/m9.figshare.21679035.v5",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDerivedFrom"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000158",
@@ -64,6 +67,16 @@
       "identifier": "https://nemar.org/dataset/nm000158",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -82,7 +95,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.2 GB (103 files)"
+    "1.15 GB (103 files)"
   ],
   "formats": [
     ".bdf",
