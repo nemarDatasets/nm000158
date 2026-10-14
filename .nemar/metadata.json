@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Liu, Lv et al. 2023 — EEG datasets of stroke patients (motor imagery)",
-  "description": "EEG motor imagery dataset recorded from 50 acute stroke patients (1-30 days post-stroke) using a wireless portable semi-dry saline EEG system. Patients imagined left- or right-hand grasping during video-guided trials (40 per subject). It is presented as the first open dataset addressing left- and right-handed motor imagery in acute stroke, supporting BCI algorithm development and rehabilitation applications. Raw and preprocessed data and patient clinical characteristics are provided.",
-  "methods_description": "EEG was recorded at 500 Hz with a ZhenTec NT1 wireless system (29 EEG and 2 EOG channels, semi-dry Ag/AgCl electrodes, CPz reference). Each of 40 trials per subject (20 left, 20 right) lasted 8 s, with an audio instruction, 4 s video-guided hand-grip motor imagery, and a rest period. Preprocessing in EEGLAB included baseline removal and 0.5-40 Hz FIR filtering.",
+  "description": "EEG recordings from 50 acute stroke patients (1-30 days post-stroke) performing a video-guided left- versus right-hand grip motor imagery task for brain-computer interface research. Data were acquired at 500 Hz with a 29-channel semi-dry wireless EEG system plus 2 EOG channels, with 40 trials per patient. The dataset is among the first open motor imagery resources for acute stroke and supports BCI algorithm development and rehabilitation applications. Here it is distributed in BIDS format with MAT and EDF files and preprocessed (0.5-40 Hz FIR filtered) data.",
+  "methods_description": "Patients sat about 80 cm from a screen and imagined grasping a spherical object with the prompted hand while watching a 4 s video of gripping motion. Each 8 s trial had an instruction stage, a motor imagery stage and a rest stage. EEG was recorded with a ZhenTec NT1 wireless semi-dry Ag/AgCl system (reference CPz, ground FPz) at 500 Hz. Preprocessing in EEGLAB included baseline removal and 0.5-40 Hz FIR filtering.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,6 +28,9 @@
       "term": "motor imagery"
     },
     {
+      "term": "acute stroke"
+    },
+    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
@@ -36,11 +39,13 @@
     {
       "term": "Stroke",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D020521"
     },
     {
       "term": "Rehabilitation",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D012046"
     },
     {
@@ -107,5 +112,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "57471defab167ddfb37d1198b0514fae8099924d08e569acce124203806e6bbe"
+  "source_hash": "a5b6c8a52e201b09d292a17ed56666e25c76c079cbcc2e526ffca8c8ba36577e"
 }
