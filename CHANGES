@@ -1,0 +1,6 @@
+1.0.4 2026-10-14
+  - README: added a notice on subjects 5, 15 and 49, whose released files
+    are derived from the recordings of subjects 4, 11 and 47 (MOABB issue
+    https://github.com/NeuroTechX/moabb/issues/1248; dataset authors
+    contacted, clarification pending). Recommendation: exclude these three
+    subjects from cross-subject analyses. No data file was changed.

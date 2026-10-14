@@ -4,6 +4,17 @@
 
 Dataset [1]_ from the study on motor imagery [2]_.
 
+## Notice: subjects 5, 15 and 49 (open question, 2026-10-14)
+
+The released recordings of subjects 5, 15 and 49 do not appear to be independent recordings:
+
+- EDF: the EEG of subject 5 is bit-identical to subject 4, and subjects 15 and 49 match subjects 11 and 47 on every channel and trial (median per-channel correlation about 0.9998).
+- Raw MAT files of the original release (Figshare 21679035, `sourcedata.zip`): recording 5 equals recording 4 plus independent, uniformly distributed noise with a 1000 µV range; the same holds for 15 vs 11 and 49 vs 47.
+
+This concerns the BIDS folders `sub-5`, `sub-15` and `sub-49` and the corresponding original EDFs under `sourcedata/`, which are unchanged copies of the Figshare release. `participants.tsv` lists each pair as different participants. Details and analysis: MOABB issue [#1248](https://github.com/NeuroTechX/moabb/issues/1248) ([analysis comment](https://github.com/NeuroTechX/moabb/issues/1248#issuecomment-6168233098)). The dataset authors were contacted on 2026-10-14; clarification is pending, and this notice will be updated when they reply.
+
+**Recommendation:** until this is clarified, exclude subjects 5, 15 and 49 from cross-subject analyses (each would otherwise appear in training and test data as a near-copy of subject 4, 11 or 47), and do not count them as independent participants. No data file has been changed or removed.
+
 ## Dataset Overview
 
 - **Code**: Liu2024
