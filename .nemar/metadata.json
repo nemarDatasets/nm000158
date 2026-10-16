@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Liu, Lv et al. 2023 — EEG datasets of stroke patients (motor imagery)",
-  "description": "EEG recordings from 50 acute stroke patients (1-30 days post-stroke) performing a video-guided left- versus right-hand grip motor imagery task for brain-computer interface research. Data were acquired at 500 Hz with a 29-channel semi-dry wireless EEG system plus 2 EOG channels, with 40 trials per patient. The dataset is among the first open motor imagery resources for acute stroke and supports BCI algorithm development and rehabilitation applications. Here it is distributed in BIDS format with MAT and EDF files and preprocessed (0.5-40 Hz FIR filtered) data.",
-  "methods_description": "Patients sat about 80 cm from a screen and imagined grasping a spherical object with the prompted hand while watching a 4 s video of gripping motion. Each 8 s trial had an instruction stage, a motor imagery stage and a rest stage. EEG was recorded with a ZhenTec NT1 wireless semi-dry Ag/AgCl system (reference CPz, ground FPz) at 500 Hz. Preprocessing in EEGLAB included baseline removal and 0.5-40 Hz FIR filtering.",
+  "description": "EEG recordings from 50 acute stroke patients (1-30 days post-stroke) performing video-guided motor imagery of left- and right-hand grasping. Data were acquired with a wireless 29-channel semi-dry EEG system plus 2 EOG channels at 500 Hz, with 40 trials per patient. This is the first open motor imagery dataset for acute stroke patients, intended for BCI algorithm development and rehabilitation research. Note: the README reports that the recordings of subjects 5, 15 and 49 appear to be near-duplicates of subjects 4, 11 and 47 respectively (an open question pending clarification from the dataset authors); it is recommended to exclude them from cross-subject analyses. No data files were changed.",
+  "methods_description": "Patients sat about 80 cm from a screen and imagined grasping a spherical object with the prompted hand while watching a 4 s video of a gripping motion. Each 8 s trial had an audio instruction stage, a motor imagery stage and a rest stage. EEG was recorded with a ZhenTec NT1 wireless system using semi-dry Ag/AgCl electrodes, CPz reference and FPz ground. Data were baseline-corrected and FIR band-pass filtered at 0.5-40 Hz in EEGLAB.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,9 +28,6 @@
       "term": "motor imagery"
     },
     {
-      "term": "acute stroke"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
@@ -39,13 +36,11 @@
     {
       "term": "Stroke",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D020521"
     },
     {
       "term": "Rehabilitation",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D012046"
     },
     {
@@ -100,7 +95,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.15 GB (103 files)"
+    "1.15 GB (105 files)"
   ],
   "formats": [
     ".bdf",
@@ -112,5 +107,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "a5b6c8a52e201b09d292a17ed56666e25c76c079cbcc2e526ffca8c8ba36577e"
+  "source_hash": "a328aa3420fe29e0bd12c319ff4e49f66804c608159029d5298e38577ac18921"
 }
