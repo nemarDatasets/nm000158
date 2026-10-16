@@ -1,3 +1,10 @@
+1.0.5 2026-10-16
+  - sourcedata: added files/38516078 (task-motor-imagery_electrodes.tsv, 761 bytes) and
+    files/38516084 (task-motor-imagery_events.tsv, 3,732 bytes), unchanged from figshare item
+    10.6084/m9.figshare.21679035 (file ids 38516078 and 38516084; md5 equal to figshare's computed_md5).
+    The loader (moabb.datasets.Liu2024) reads both for every subject; they are listed without a subject.
+    No existing file changed; the BIDS tree and README are unchanged.
+
 1.0.4 2026-10-14
   - README: added a notice on subjects 5, 15 and 49, whose released files
     are derived from the recordings of subjects 4, 11 and 47 (MOABB issue

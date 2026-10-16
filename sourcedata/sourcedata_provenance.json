@@ -8,8 +8,8 @@
  "license": "CC-BY-4.0",
  "doi": "10.1038/s41597-023-02787-8",
  "naming": "upstream_filenames_restored",
- "n_files": 50,
- "total_bytes": 528435200,
+ "n_files": 52,
+ "total_bytes": 528439693,
  "files": [
   {
    "file": "sub-01/eeg/sub-01_task-motor-imagery_eeg.edf",
@@ -310,7 +310,32 @@
    "bytes": 10568704,
    "sha256": "f008af1770c21d503283482e2afc26cdd5dc3bf309ac417794d6744a24e3497f",
    "subject": "50"
+  },
+  {
+   "file": "files/38516078",
+   "bytes": 761,
+   "sha256": "356602afb28c7a5b6539c06d709950aa16493c552c4246031b13a318ef99ddb3",
+   "subject": null,
+   "url": "https://ndownloader.figshare.com/files/38516078",
+   "how": "dataset-level file (task-motor-imagery_electrodes.tsv, figshare file 38516078) read by Liu2024.data_infos() for every subject; the loader caches it as MNE-liu2024-data/files/38516078 (outside upstream_cache_root), served from sourcedata/files/38516078 by the URL-tail store lookup; md5 = figshare computed_md5"
+  },
+  {
+   "file": "files/38516084",
+   "bytes": 3732,
+   "sha256": "8a43776445d5f5aafd5f34e6dc776a5c9064f997ff43f78c204e935f2339d429",
+   "subject": null,
+   "url": "https://ndownloader.figshare.com/files/38516084",
+   "how": "dataset-level file (task-motor-imagery_events.tsv, figshare file 38516084) read by Liu2024.data_infos() for every subject; the loader caches it as MNE-liu2024-data/files/38516084 (outside upstream_cache_root), served from sourcedata/files/38516084 by the URL-tail store lookup; md5 = figshare computed_md5"
   }
  ],
- "n_subjects_recorded": 50
+ "n_subjects_recorded": 50,
+ "revisions": [
+  {
+   "date": "2026-10-16",
+   "version": "1.0.5",
+   "added_files": 2,
+   "added_bytes": 4493,
+   "note": "Added the two dataset-level files moabb.datasets.Liu2024.data_infos() downloads for every subject (figshare file ids 38516078 = task-motor-imagery_electrodes.tsv and 38516084 = task-motor-imagery_events.tsv), stored under the name the loader caches them with (MNE-liu2024-data/files/<id>, i.e. the URL path), as sourcedata/files/<id>. Downloaded from https://ndownloader.figshare.com/files/<id>; md5 and size equal to the figshare API computed_md5/size. Subject-less entries: shared by every subject's load. The EDF archive edffile.zip is not added (its EDFs are already in this deposit)."
+  }
+ ]
 }
